@@ -1,6 +1,36 @@
-.status{
+/* .status{
     display: flex;
  
     gap: 8px;
     justify-content: center;
+} */
+
+.status{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.status-column-heading-options > img{
+    width: 20px;
+}
+
+.status-column-heading, .status-column-heading-title, .status-column-heading-options{
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+}
+
+.status-column-heading-title{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.todo, .progress, .done, .cancel{
+    width: 15px;
+}
+
+.numbers{
+    margin-left:10px;
+    color: rgb(169, 167, 167);;
 }
