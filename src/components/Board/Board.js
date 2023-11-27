@@ -6,15 +6,14 @@ import User from '../../components/Groups/User/User'
 import './Board.css';
 
 const Board = () => {
-  const { state, dispatch } = useContext(KanbanContext);
-
-  useEffect(() => {
-    dispatch({ type: 'SET_GROUPING', payload: 'user' }); 
-    dispatch({ type: 'SET_SORTING', payload: 'title' }); 
-  }, [dispatch]);
+  const {state} = useContext(KanbanContext);
 
   const getFilteredTickets = () => {
     const { tickets, sortingOption} = state;
+
+    if (!tickets) {
+      return [];
+    }
 
     let filteredTickets = tickets;
     if (sortingOption === 'title') {

@@ -12,7 +12,7 @@ import Alert from '../../../assets/icons/alert_orange.svg'
 const Priority = () => {
   const { state } = useContext(KanbanContext);
   const { tickets } = state;
-
+  
   // Function to filter tickets based on priority
   const filterTicketsByPriority = (priority) => {
     return tickets.filter((ticket) => ticket.priority === priority);

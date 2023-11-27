@@ -11,7 +11,9 @@ import './Status.css';
 
 const Status = () => {
   const { state } = useContext(KanbanContext);
+  
   const { tickets } = state;
+
 
   // Function to filter tickets based on status
   const filterTicketsByStatus = (status) => {
@@ -103,7 +105,7 @@ const Status = () => {
       <div className="status-column cancel-div">
         <div className='status-column-heading-title'>
           <img className='cancel' src={Cancel} alt="Cancel Icon" />
-          <p>Cancelled<span className='numbers'>0</span></p>
+          <p>Canceled<span className='numbers'>0</span></p>
         </div>
       </div>
     </div>
