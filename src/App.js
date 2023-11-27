@@ -14,7 +14,6 @@ function App() {
         <Header/>
         <main>
           <Board />
-          {/* <Card/> */}
         </main>
       </div>
     </KanbanProvider>
