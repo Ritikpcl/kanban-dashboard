@@ -43,7 +43,9 @@ const Card = ({ ticket }) => {
         <div className='statusIcon'>
           {getStatusIcon(ticket.status)}
         </div>
+        <div className='desc-title'>
         {ticket.title}
+        </div>
       </div>
 
       <div className='footer'>

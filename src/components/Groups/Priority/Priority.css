@@ -1,4 +1,29 @@
 .priority{
     display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.priority-column-heading-options > img{
+    width: 20px;
+}
+
+.priority-column-heading, .priority-column-heading-title, .priority-column-heading-options{
+    display: flex;
     justify-content: space-between;
+    gap:5px;
+}
+
+.priority-column-heading-title{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.threeDots, .alert, .high, .medium, .low {
+    width: 10px;
+}
+
+.numbers{
+    margin-left:10px;
+    color: rgb(169, 167, 167);;
 }
