@@ -106,8 +106,10 @@ const Status = () => {
 
       <div className="status-column cancel-div">
         <div className='status-column-heading-title'>
+          <div style={{display:'flex', gap:'10px'}}>
           <img className='cancel' src={Cancel} alt="Cancel Icon" />
           <p>Canceled<span className='numbers'>0</span></p>
+          </div>
         </div>
       </div>
     </div>
