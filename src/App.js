@@ -8,7 +8,7 @@ import { KanbanContext } from './context/KanbanContext';
 function App() {
 
   const { loading,state  } = useContext(KanbanContext);
-console.log(loading,state)
+
 if(loading) return (<div>Loading...</div>)
   return (
       <div className="app">

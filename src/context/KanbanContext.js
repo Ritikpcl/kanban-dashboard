@@ -11,7 +11,6 @@ const KanbanProvider = ({ children }) => {
     try {
       const data = localStorage.getItem('kanbanState');
       const storedState = JSON.parse(data);
-      console.log("store data",storedState)
       return storedState || { groupingOption: 'priority', sortingOption: 'title' };
     } catch (error) {
       console.error('Error loading state from local storage:', error);
