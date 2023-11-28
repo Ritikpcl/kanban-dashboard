@@ -19,6 +19,7 @@
 .user-column-heading-title {
         font-size: 12px;
         font-weight: bold;
+        align-items: center;
 }
 
 .user-pic,

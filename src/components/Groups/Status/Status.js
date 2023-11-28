@@ -28,7 +28,7 @@ const Status = () => {
         <div className="status-column-heading">
           <div className='status-column-heading-title'>
             <img className='todo' src={Todo} alt="todo Icon" />
-            <p>Backlog<span className='numbers'>{filterTicketsByStatus('Backlog').length}</span></p>
+            <p>Backlog<span className='numbers'>{filterTicketsByStatus('Backlog')?filterTicketsByStatus('Backlog').length : 0}</span></p>
           </div>
 
 
@@ -48,7 +48,7 @@ const Status = () => {
         <div className="status-column-heading">
           <div className='status-column-heading-title'>
             <img className='todo' src={Todo} alt="todo Icon" />
-            <p>Todo<span className='numbers'>{filterTicketsByStatus('todo').length}</span></p>
+            <p>Todo<span className='numbers'>{filterTicketsByStatus('todo')? filterTicketsByStatus('todo').length:0}</span></p>
           </div>
 
 
@@ -69,7 +69,7 @@ const Status = () => {
         <div className="status-column-heading">
           <div className='status-column-heading-title'>
             <img className='progress' src={Progress} alt="progress Icon" />
-            <p>In Progress<span className='numbers'>{filterTicketsByStatus('In Progress').length}</span></p>
+            <p>In Progress<span className='numbers'>{filterTicketsByStatus('In Progress')?filterTicketsByStatus('In Progress').length:0}</span></p>
           </div>
 
 
@@ -89,7 +89,7 @@ const Status = () => {
         <div className="status-column-heading">
           <div className='status-column-heading-title'>
             <img className='done' src={Done} alt="Done Icon" />
-            <p>Done<span className='numbers'>{filterTicketsByStatus('Done').length}</span></p>
+            <p>Done<span className='numbers'>{filterTicketsByStatus('Done')? filterTicketsByStatus('Done').length : 0}</span></p>
           </div>
 
 
@@ -108,7 +108,7 @@ const Status = () => {
         <div className='status-column-heading-title'>
           <div style={{display:'flex', gap:'10px'}}>
           <img className='cancel' src={Cancel} alt="Cancel Icon" />
-          <p>Canceled<span className='numbers'>0</span></p>
+          <p>Canceled<span className='numbers'>{filterTicketsByStatus('Canceled')? filterTicketsByStatus('Canceled').length : 0}</span></p>
           </div>
         </div>
       </div>
