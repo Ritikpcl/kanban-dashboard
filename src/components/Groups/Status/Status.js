@@ -14,6 +14,8 @@ const Status = () => {
   
   const { tickets } = state;
 
+  // if(!tickets) return null;
+
 
   // Function to filter tickets based on status
   const filterTicketsByStatus = (status) => {

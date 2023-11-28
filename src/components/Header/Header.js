@@ -8,7 +8,7 @@ import './Header.css';
 const Header = () => {
   const [show, setShow] = useState(false)
   const { state, dispatch } = useContext(KanbanContext);
-
+  
   const handleGroupingChange = (event) => {
     dispatch({ type: 'CHANGE_GROUPING', payload: event.target.value });
   };

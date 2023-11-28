@@ -10,6 +10,8 @@ const User = () => {
   const { state } = useContext(KanbanContext);
   const { tickets, users } = state;
 
+  // if(!tickets) return null;
+
   // Function to filter tickets based on userId
   const filterTicketsByUserId = (userId) => {
     return tickets.filter((ticket) => ticket.userId === userId);
